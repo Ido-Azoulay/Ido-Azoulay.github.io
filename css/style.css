@@ -19,7 +19,6 @@ body {
     animation-duration: 2s;
     /* Background pattern from Toptal Subtle Patterns */
     background: var(--body-background-pattern);
-    height: 100vh;
     margin: 0;
     display: flex; 
     flex-direction: column; 
