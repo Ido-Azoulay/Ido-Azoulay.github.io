@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icons-->
+    <link rel="stylesheet" href=""><script src="https://kit.fontawesome.com/a37a54b928.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Icon for web-->
+    <link rel="icon" href="images/website-icon.png">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Ido Azoulay</title>
+</head>
+<body>
+    <header class="header__area">
+        <a href="#Home"><img class="header__logo" src="images/ido-azoulay-logo.png" alt="logo"><span><img class="header__logo-phone" src="images/ido-azoulay-logo-phone.png" alt=""></span></a>
+        <div class="header__nav" id="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                    <a class="header__nav-list-item-link" href="#Home"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a class="header__nav-list-item-link" href="#About"><i class="fas fa-address-card"></i> About</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a class="header__nav-list-item-link" href="#Skills"><i class="fas fa-dumbbell"></i> Skills</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a class="header__nav-list-item-link" href="#Projects"><i class="fas fa-project-diagram"></i> Projects</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a class="header__nav-list-item-link" href="#Contact"><i class="fas fa-paper-plane"></i> Contact</a>
+                </li>
+                <li class="header__nav-list-item">
+                    <span id="theme-switch" class="header__nav-list-item-adjust-icon"><i class="fas fa-adjust"></i><span class="header__nav-list-item-theme-phone"> Theme</span></span>
+                </li>
+            </ul>
+        </div>
+        <div id="header__phone" class="header__phone">
+            <button onclick="showMenu()" id="nav-toggle" class="header__nav-list-item header__nav-toggle">
+                <span id="open" class="open"><i class="fas fa-bars"></i></span><span id="close" class="close"><i class="fas fa-times"></i></span>
+            </button>
+        </div>
+    </header>
+    <section class="home__area" id="Home">
+        <img class="home__image styled-image" src="images/home-image.jpeg" alt="An image of ido smiling">
+        <div class="home__text-box">
+            <h3>
+                Hey, my name is
+            </h3>
+            <h1>
+                Ido Azoulay
+            </h1>
+            <h2>
+                and I'm a programmer;
+            </h2>
+        </div>
+    </section>
+    <section id="About">
+        <h2 class="about__title">About Me</h2>
+        <div class="about__area">
+            <img class="styled-image about__image" src="images/about-image.jpeg" alt="An image of ido smiling">
+            <div class="about__text-box">
+                <h3 class="about__text-box-title">Hey!</h3>
+                <p>My name is Ido, I am 11th grader at Amit Hammer School and I am studying computer science and physics. I am a passionate programmer who loves everything about the subject of programming moreover I am finding out about this subject on my own and I am constantly searching for new projects to create and learn from. My ultimate goal is to work for a high-tech company as a programmer oneday.</p>
+                <a class="button" href="pdf/IdoCV.pdf" download><i style="margin-right: 5px;" class="fas fa-file-download"></i> download CV</a>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <h2 class="skills__title">My Skills</h2>
+        <div class="skills__area">
+            <div class="skills__type-programing">
+                <h3 class="skills__type-name"><i class="fas fa-terminal"></i> Programing</h3>
+                <h3 class="skills__skill-name">Java</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-java">80%</div>
+                </div>
+
+                <h3 class="skills__skill-name">C#</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-c-sharp">90%</div>
+                </div>
+
+                <h3 class="skills__skill-name">Python</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-python">85%</div>
+                </div>
+            </div>
+            <div class="skills__type-coding">
+                <h3 class="skills__type-name">Front-End <i class="fas fa-code"></i></h3>
+                <h3 class="skills__skill-name">HTML</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-html">70%</div>
+                </div>
+                
+                <h3 class="skills__skill-name">CSS</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-css">75%</div>
+                </div>
+                
+                <h3 class="skills__skill-name">JavaScript</h3>
+                <div class="skills__skill-bar">
+                    <div class="skills__skill-bar-filling skills__skill-bar-javascript">65%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <h2 class="projects__title">Projects</h2>
+        <h3 class="projects__subtitle">*three recent</h3>
+        <div class="projects__projects-container">
+            <div class="projects__project-card">
+                <div class="projects__project-card-image-area">
+                    <img class="projects__project-card-image" src="images/iron-dome-simulator-logo.png" alt="Iron Dome Simulator logo">
+                    <p class="projects__project-card-date">11/06/2021</p>
+                </div>
+                <div class="projects__project-card-text-area">
+                    <div class="projects__project-card-tags-container">
+                        <div class="projects__project-card-tag"><p>Python</p></div>
+                        <div class="projects__project-card-tag"><p>PyGame</p></div>
+                    </div>
+                    <h3 class="projects__project-card-text-area-title">Iron Dome Simulator</h3>
+                    <p>My first game I have created. I created this game in the programing language Python in the game engine PyGame. This game won in the third place in the Hackathon of the association Hahari-Tech.</p>
+                    <a class="projects__project-see-more" href="project-iron-dome-simulator.html"><b>Click to see more </b><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projects__project-card">
+                <div class="projects__project-card-image-area">
+                    <img class="projects__project-card-image" src="images/ido-azoulay-website.png" alt="Ido Azoulay website logo">
+                    <p class="projects__project-card-date">01/11/2021</p>
+                </div>
+                <div class="projects__project-card-text-area">
+                    <div class="projects__project-card-tags-container">
+                        <div class="projects__project-card-tag"><p>CSS</p></div>
+                        <div class="projects__project-card-tag"><p>HTML</p></div>
+                        <div class="projects__project-card-tag"><p>JavaScript</p></div>
+                    </div>
+                    <h3 class="projects__project-card-text-area-title">Ido Azoulay website</h3>
+                    <p>This curent website you're in which is my own and first website. I created this website from scratch in the programing languages HTML, CSS and JavaScript.</p>
+                    <a class="projects__project-see-more" href="project-ido-azoulay-website.html"><b>Click to see more </b><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projects__project-card">
+                <div class="projects__project-card-image-area">
+                    <img class="projects__project-card-image" src="images/access-school-database.png" alt="Access school database">
+                    <p class="projects__project-card-date">30/05/2021</p>
+                </div>
+                <div class="projects__project-card-text-area">
+                    <div class="projects__project-card-tags-container">
+                        <div class="projects__project-card-tag"><p>Access</p></div>
+                        <div class="projects__project-card-tag"><p>Database</p></div>
+                    </div>
+                    <h3 class="projects__project-card-text-area-title">School Database</h3>
+                    <p>A project from school for an introduction to the world of data structure. In this project we were asked to create a database in Access and also creating a project booklet. I decided to create a database that would pertain to a school.</p>
+                    <a class="projects__project-see-more" href="project-access-school-database.html"><b>Click to see more </b><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="projects__more-projects" href="all-projects.html"><b>Click to see all Projects </b><i class="fas fa-arrow-right"></i></a>
+    </section>
+    <section id="Contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form id="contact-form" action="https://formsubmit.co/azoulayido@gmail.com" method="POST">
+            <div class="contact__field">
+                <label for="" class="contact__field-label">Name</label>
+                <input type="text" name="Name" class="contact__field-input" required>
+            </div>
+            <div class="contact__field">
+                <label for="" class="contact__field-label">Email</label>
+                <input type="email" name="Email" class="contact__field-input" required>
+            </div>
+            <div class="contact__field">
+                <label for="" class="contact__field-label">Subject</label>
+                <input type="text" name="Subject" class="contact__field-input" required>
+            </div>
+            <div class="contact__field">
+                <label for="" class="contact__field-label">Message</label>
+                <textarea class="contact__field-input" name="Message" id="" cols="0" rows="7" required></textarea>
+            </div>
+            <div class="contact__field-send-button">
+                <button type="submit" onclick="restForm()" class="button contact__field-send-button">Send Massage <i class="fas fa-shipping-fast"></i></button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer__area">
+        <ul class="footer__list">
+            <li class="footer__list-item">
+                <a class="footer__list-item-link" href=""><i class="fas fa-envelope"></i> azoulayido@gmail.com</a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__list-item-link" href=""><i class="fas fa-phone"></i> 0527975250</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">This web was created by Ido Azoulay all rights are reserved &copy</p> 
+    </footer>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
